@@ -2,6 +2,12 @@ def main():
     print("ET0735 (DevOps for AIot) - Lab 2 - Introduction to python")
     display_main_input()
     num_list =  get_user_input()
+    average = calc_average(num_list)
+    min_max_values = find_min_max(num_list)
+    median_value = calc_median_temperature(num_list)
+    print("Average: " + str(average))
+    print("Minimum and Maximum values: " + str(min_max_values))
+    print("Median: " + str(median_value))
 
 def display_main_input():
     print("Enter some numbers separated by commas (e.g. 5, 67, 32)")
@@ -30,7 +36,7 @@ def calc_average(List):
 
 def find_min_max(List):
     min_max = []
-    min_number = 0
+    min_number = 1000000
     max_number = 0
     for numbers in List:
         if numbers < min_number:
