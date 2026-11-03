@@ -62,7 +62,7 @@ def calc_median_temperature(List):
         median = sorted_list[length // 2]
     else: 
         print("Invalid list")
-        return
+        return None
     return median
 
 if __name__ == "__main__":
